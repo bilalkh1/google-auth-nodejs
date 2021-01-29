@@ -7,7 +7,7 @@ module.exports = (passport) => {
   passport.use(new GoogleStrategy({
     clientID: "",
     clientSecret: "",
-    callbackURL: "/google/redirect"
+    callbackURL: ""
   },
   function(accessToken, refreshToken, user, cb) {
     db.User.findOne({where: { googleId: user.id }}).then((currentUser) => {
