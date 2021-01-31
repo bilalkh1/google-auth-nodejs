@@ -39,7 +39,7 @@ passportConfig(passport);
 
 db.sequelize.sync().then(() => {
     // Start the server
-    server = app.listen(3100, err => {
+    server = app.listen(3000, err => {
         if (err) {
             console.error('Error ', err)
         }
