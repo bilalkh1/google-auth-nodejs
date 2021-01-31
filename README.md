@@ -9,6 +9,7 @@ passport.use(new GoogleStrategy({
     callbackURL: ""
  }
 ```
+#### Before you run this code you should create a sql database and then change the name of the database in /config/config.json
 ## To run this code you can use the following commands : 
 * npm install
 * nodemon server
